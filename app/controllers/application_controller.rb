@@ -19,8 +19,7 @@ class ApplicationController < Sinatra::Base
     @name = params[:name]
     @email = params[:email]
     @password = params[:password]
-    binding.pry
-    # redirect '/users/home'
+    redirect '/users/home'
   end
 
   get '/sessions/login' do
